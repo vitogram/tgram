@@ -48,7 +48,7 @@ func TestImgProcess(t *testing.T) {
 	a peach
 
 	![](https://cdn-images-1.medium.com/max/2000/1*dT8VX9g8ig6lxmobTRmCiA.jpeg)
-	[tgr.am](http://tgr.am) - дзэн сервис для писателей и читателей с минималистичным дизайном, удобным интерфейсом и высокой скоростью работы.
+	[tgram.vitogram](http://tgram.vitogram) - дзэн сервис для писателей и читателей с минималистичным дизайном, удобным интерфейсом и высокой скоростью работы.
 
 	Тут можно:
 	 - публиковать посты
@@ -56,7 +56,7 @@ func TestImgProcess(t *testing.T) {
 	 - добавлять в избранное
 	 - подписываться на авторов
 	
-	Сервис доступен для [русскоязычных](http://ru.tgr.am/), и  [англоязычных](http://en.tgr.am/) пользователей. Потестировать  сервис можно на специальной [тестовой площадке](http://tst.tgr.am/).
+	Сервис доступен для [русскоязычных](http://ru.tgram.vitogram/), и  [англоязычных](http://en.tgram.vitogram/) пользователей. Потестировать  сервис можно на специальной [тестовой площадке](http://tst.tgram.vitogram/).
 	
 	Авторы - пожалуйста, уважайте читателей. Не публикуйте спам, рекламу, запрещенный и/или защищенный авторским правом контент. Посты с подобным содержанием будут удалены, а их авторы - заблокированы.
 	
@@ -64,10 +64,10 @@ func TestImgProcess(t *testing.T) {
 	
 	Проект бесплатен и с открытым исходным кодом. Буду рад замечаниям и предложениям на [github](https://github.com/recoilme/tgram) проекта.
 	
-	С уважением, [@recoilme](http://ru.tgr.am/@recoilme)
+	С уважением, [@recoilme](http://ru.tgram.vitogram/@recoilme)
 	![descr descr](https://image.freepik.com/free-vector/industrial-machine-vector_23-2147498405.jpg)
 	![descr descr](http://tggram.com/media/daokedao/photos/file_826207.jpg)
-	![descr descr](http://tst.tgr.am/m/img/logo_big.png)
+	![descr descr](http://tst.tgram.vitogram/m/img/logo_big.png)
 	`
 	s, err := models.ImgProcess(s, "ru", "recoilme", "http://sub.localhost:8081/")
 	if err != nil {
@@ -106,7 +106,7 @@ func TestFindUser(t *testing.T) {
 
 func TestTgImgProcess(t *testing.T) {
 	s := `Первое, что бросается в глаза, это высокая скорость загрузки страниц и агрессивная оптимизация.
-	[![](http://tst.tgr.am/i/tst/recoilme/17.png)](http://tst.tgr.am/i/tst/recoilme/17_.png)
+	[![](http://tst.tgram.vitogram/i/tst/recoilme/17.png)](http://tst.tgram.vitogram/i/tst/recoilme/17_.png)
 	Вы не найдете сторонних скриптов`
 	models.TgClickableImage(s)
 }

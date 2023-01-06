@@ -20,9 +20,9 @@ import (
 	"github.com/microcosm-cc/bluemonday"
 	"github.com/recoilme/tgram/models"
 	"github.com/recoilme/tgram/utils"
+	"github.com/russross/blackfriday"
 	"golang.org/x/crypto/bcrypt"
 	"golang.org/x/text/language"
-	"github.com/russross/blackfriday"
 )
 
 //The SiteConfig struct stores site customisations
@@ -74,11 +74,11 @@ func CheckAuth() gin.HandlerFunc {
 		/*
 			if c.Query("ref") == "producthunt" {
 				c.Set("lang", "ph")
-				c.Redirect(http.StatusFound, "https://ph.tgr.am")
+				c.Redirect(http.StatusFound, "https://ph.tgram.vitogram")
 				return
 			}*/
 		if host == "tgr" {
-			// tgr.am
+			// tgram.vitogram
 			//fmt.Println("host:tgr")
 			t, _, err := language.ParseAcceptLanguage(c.Request.Header.Get("Accept-Language"))
 			if err == nil && len(t) > 0 {
@@ -106,11 +106,11 @@ func CheckAuth() gin.HandlerFunc {
 				lang = "en"
 			}
 			// redirect on subdomain
-			c.Redirect(http.StatusFound, "https://"+lang+".tgr.am")
+			c.Redirect(http.StatusFound, "https://"+lang+".tgram.vitogram.ru")
 			return
 		}
 		if len(host) < 2 || len(host) > 3 {
-			c.Redirect(http.StatusFound, "https://"+lang+".tgr.am")
+			c.Redirect(http.StatusFound, "https://"+lang+".tgram.vitogram.ru")
 			return
 		}
 
@@ -121,7 +121,7 @@ func CheckAuth() gin.HandlerFunc {
 			}
 		}
 		if !found {
-			c.Redirect(http.StatusFound, "https://"+lang+".tgr.am")
+			c.Redirect(http.StatusFound, "https://"+lang+".tgram.vitogram.ru")
 			return
 		}
 
@@ -692,7 +692,7 @@ func Editor(c *gin.Context) {
 				return
 			}
 			send2telegram(c.GetString("lang"), c.GetString("username"), a.Body, a.Title,
-				fmt.Sprintf("https://%s.tgr.am/@%s/%d#comments", c.GetString("lang"), a.Author, a.ID), a.OgImage, a.ID)
+				fmt.Sprintf("https://%s.tgram.vitogram.ru/@%s/%d#comments", c.GetString("lang"), a.Author, a.ID), a.OgImage, a.ID)
 
 			send2fcm("/topics/"+c.GetString("lang")+"_all", a)
 			//log.Println("aid2", a)
@@ -744,7 +744,7 @@ func Editor(c *gin.Context) {
 		models.PostLimitSet(c.GetString("lang"), c.GetString("username"))
 		//cc.Set(postRate, time.Now().Unix(), cache.DefaultExpiration)
 		send2telegram(c.GetString("lang"), c.GetString("username"), a.Body, a.Title,
-			fmt.Sprintf("https://%s.tgr.am/@%s/%d#comments", c.GetString("lang"), a.Author, a.ID), a.OgImage, a.ID)
+			fmt.Sprintf("https://%s.tgram.vitogram/@%s/%d#comments", c.GetString("lang"), a.Author, a.ID), a.OgImage, a.ID)
 
 		send2fcm("/topics/"+c.GetString("lang")+"_all", &a)
 		switch c.Request.Header.Get("Content-type") {

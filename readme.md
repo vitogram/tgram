@@ -1,6 +1,6 @@
 # Typegram
 
-[typegram](https://tgr.am) - open source publishing platform.
+[typegram](https://tgram.vitogram) - open source publishing platform.
 
 **Basic Capabilities**
 
@@ -11,17 +11,17 @@
 
 **Playground**
 
-You can try the service on a special [test site](https://tst.tgr.am/). Please! Use this [playground](https://tst.tgr.am/) for play with engine!
+You can try the service on a special [test site](https://tst.tgram.vitogram/). Please! Use this [playground](https://tst.tgram.vitogram/) for play with engine!
 
 **Localization**
 
-The service is available, for example, for [Russian-speaking](https://ru.tgr.am/), or [English-speaking](https://en.tgr.am/) users. During development, platforms for other languages are opened. On each subdomain, users and publications are separate. Please, help me to translate the welcome post for your language
+The service is available, for example, for [Russian-speaking](https://ru.tgram.vitogram/), or [English-speaking](https://en.tgram.vitogram/) users. During development, platforms for other languages are opened. On each subdomain, users and publications are separate. Please, help me to translate the welcome post for your language
 [Add my country](https://github.com/recoilme/tgram/issues/43)
 
 **Optimization**
 
 The first thing that catches your eye is the high speed of page loads and aggressive optimization.
-![](https://tst.tgr.am/i/tst/recoilme/17_.png)
+![](https://tst.tgram.vitogram/i/tst/recoilme/17_.png)
 
 
 You will not find third-party scripts that monitor user behavior or huge styles / images. The site works with javascript turned off, it remains fast and convenient on any platform.
@@ -29,17 +29,17 @@ You will not find third-party scripts that monitor user behavior or huge styles 
 **Subscriptions**
 
 On the main page, the author you are subscribed to is displayed, and the number of new publications. The link leads to the first unread message, in chronological order, as in telegram. Typegram does not impose on you whom and when to read.
-![](https://tst.tgr.am/i/tst/recoilme/23_.png)
+![](https://tst.tgram.vitogram/i/tst/recoilme/23_.png)
 
 **Mentions**
 
 When someone mentions you in comments you will see it on the main page
-![](https://tst.tgr.am/i/tst/recoilme/22_.png)
+![](https://tst.tgram.vitogram/i/tst/recoilme/22_.png)
 
 **Editor**
 
 The editor supports typing in markdown markup, with rich features and visual formatting. With the ability to make a post fullscreen, preview, autosave and other convenient "tidbits"
-![](https://en.tgr.am/i/en/recoilme/2_.png)
+![](https://en.tgram.vitogram/i/en/recoilme/2_.png)
 
 **Rating system**
 
@@ -74,7 +74,7 @@ Each article may have a global tag. But only one. Be smart, then choose a tag fo
 **Monsters**
 
 Each user has a personal monster/avatar. Approximately this:
-![](https://en.tgr.am/i/en/recoilme/5.png)
+![](https://en.tgram.vitogram/i/en/recoilme/5.png)
 
 
 **Notification**
@@ -91,13 +91,13 @@ All what you need:
  - add  @type2telegrambot as administrator in channel
  - add telegram channel in profile settings
 
-![](https://ru.tgr.am/i/ru/recoilme/23_.png)
+![](https://ru.tgram.vitogram/i/ru/recoilme/23_.png)
 
 That's all. At the next publication - the typegram converts the post into a telegram markup and publishes it. Public and private channels are supported. And you can edit article directly on the site. 
 
 **Stats**
 
-All stats are open and available at this site: [stat.tgr.am](https://stat.tgr.am)
+All stats are open and available at this site: [stat.tgram.vitogram](https://stat.tgram.vitogram)
 
 **Android**
 
@@ -115,7 +115,7 @@ The project is free and open source. I always welcome comments and suggestions o
 
 This app uses [slowpoke](https://github.com/recoilme/slowpoke) as the database. Package slowpoke implements a low-level key/value store in pure Go. This database engine was developed specially for typegram
 
-![slowpoke](https://en.tgr.am/i/en/recoilme/3_.png)
+![slowpoke](https://en.tgram.vitogram/i/en/recoilme/3_.png)
 
 
 # How it works
@@ -169,7 +169,7 @@ TGRAMNAME=Typegram
 TGRAMDESC=zen platform for writers
 TGRAMADMIN=recoilme
 TGRAMABOUT=/@recoilme/1
-TGRAMDOMAIN=tgr.am
+TGRAMDOMAIN=tgram.vitogram
 ```
 
 

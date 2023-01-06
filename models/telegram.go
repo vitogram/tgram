@@ -178,7 +178,7 @@ func TgSendMsg(bot, channel, txt, title, link, img string, msgID int) (mid int) 
 func TgClickableImage(s string) string {
 	/*
 		s := `Первое, что бросается в глаза, это высокая скорость загрузки страниц и агрессивная оптимизация.
-		[![](http://tst.tgr.am/i/tst/recoilme/17.png)](http://tst.tgr.am/i/tst/recoilme/17_.png)
+		[![](http://tst.tgram.vitogram/i/tst/recoilme/17.png)](http://tst.tgram.vitogram/i/tst/recoilme/17_.png)
 		Вы не найдете сторонних скриптов`
 	*/
 	r, err := regexp.Compile(`\[!\[(.*?)\]\((.*?)\)\]\((.*?)\)`)

@@ -48,5 +48,5 @@ func TestSendEmail(t *testing.T) {
 	LoadEnv()
 	log.Println(routers.Config)
 	c := routers.Config
-	models.SendMail(c.SMTPHost, c.SMTPPort, c.SMTPUser, c.SMTPPassword, c.Domain, "vadim-kulibaba@yandex.ru", "Some title", "Some body\nhttps://ru.tgr.am/@recoilme/1")
+	models.SendMail(c.SMTPHost, c.SMTPPort, c.SMTPUser, c.SMTPPassword, c.Domain, "vadim-kulibaba@yandex.ru", "Some title", "Some body\nhttps://ru.tgram.vitogram/@recoilme/1")
 }
